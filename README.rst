@@ -94,7 +94,7 @@ Quick installation instruction
 Custom Configuration
 ====================
 1. Admin forms will be used if registered with the model you are trying to use. If you have
-   a model admin called ``EntryAdmin`` registered with ``django.contrib.admin.site`` then 
+   a model admin called ``EntryAdmin`` registered with ``django.contrib.admin.site`` then
    frontendadmin will use any form associated with, specified in ``EntryAdmin.Meta.form``.
 
 2. You can also set which forms will be used for a specific model. The forms may
@@ -110,7 +110,7 @@ Custom Configuration
    the ``EntryForm`` within the ``blog.forms`` module. The key for the
    dictionary is ``app_label`` . ``model_name`` and must be all lower case.
    The value of the dictionary is ``module_name`` . ``form_class`` and must match
-   the capitalization of the actual module. 
+   the capitalization of the actual module.
 
 3. You may define which fields to include or exclude on a per model basis
    from inside your settings. Here is a snippet that blocks a user from being
@@ -128,7 +128,7 @@ Custom Configuration
    and exclude the ``user`` field from the form. Notice the key for both
    dictionaries is ``app_label`` . ``model_name`` and must be all lower case.
 
-   
+
 4. Custom form templates will be used by default if they exist. For a model
    named ``entry`` in the app ``blog`` the frontendadmin will try to use
    ``frontendadmin/blog_entry_form.html`` for the full form and ``frontendadmin/blog_entry_form_ajax.html``
